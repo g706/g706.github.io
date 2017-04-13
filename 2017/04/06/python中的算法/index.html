@@ -8,22 +8,25 @@
   <link rel="dns-prefetch" href="https://g706.github.io">
   <title>python界的小学生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python中的一些算法算法为什么要写上num 的累加值  其实是对算法的一种优化 
-假如列表中有排好的顺序就不进入循环中 来节省时间
-12345678910111213141516171819#冒泡排序def bubble(alist):   for j in range(1,len(alist)):       num = 0       for i in range(len(alist)-">
+  <meta name="description" content="python中的一些算法对于一个程序员而言，一个好的算法可以让自己的程序变得既美观又稳定
+*下来来说下自己对python中的语言算法，不喜勿喷！
+冒泡排序
+为什么要写上num 的累加值  其实是对算法的一种优化假如列表中有排好的顺序就不进入循环中 来节省时间">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python界的小学生">
 <meta property="og:url" content="https://g706.github.io/2017/04/06/python中的算法/index.html">
 <meta property="og:site_name" content="python界的小学生">
-<meta property="og:description" content="python中的一些算法算法为什么要写上num 的累加值  其实是对算法的一种优化 
-假如列表中有排好的顺序就不进入循环中 来节省时间
-12345678910111213141516171819#冒泡排序def bubble(alist):   for j in range(1,len(alist)):       num = 0       for i in range(len(alist)-">
-<meta property="og:updated_time" content="2017-04-06T13:17:32.689Z">
+<meta property="og:description" content="python中的一些算法对于一个程序员而言，一个好的算法可以让自己的程序变得既美观又稳定
+*下来来说下自己对python中的语言算法，不喜勿喷！
+冒泡排序
+为什么要写上num 的累加值  其实是对算法的一种优化假如列表中有排好的顺序就不进入循环中 来节省时间">
+<meta property="og:updated_time" content="2017-04-10T13:21:37.004Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python界的小学生">
-<meta name="twitter:description" content="python中的一些算法算法为什么要写上num 的累加值  其实是对算法的一种优化 
-假如列表中有排好的顺序就不进入循环中 来节省时间
-12345678910111213141516171819#冒泡排序def bubble(alist):   for j in range(1,len(alist)):       num = 0       for i in range(len(alist)-">
+<meta name="twitter:description" content="python中的一些算法对于一个程序员而言，一个好的算法可以让自己的程序变得既美观又稳定
+*下来来说下自己对python中的语言算法，不喜勿喷！
+冒泡排序
+为什么要写上num 的累加值  其实是对算法的一种优化假如列表中有排好的顺序就不进入循环中 来节省时间">
   
     <link rel="alternative" href="/atom.xml" title="python界的小学生" type="application/atom+xml">
   
@@ -165,9 +168,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="python中的一些算法算法"><a href="#python中的一些算法算法" class="headerlink" title="python中的一些算法算法"></a>python中的一些算法算法</h2><p><em>为什么要写上num 的累加值  其实是对算法的一种优化 
-</em>假如列表中有排好的顺序就不进入循环中 来节省时间</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#冒泡排序</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubble</span><span class="params">(alist)</span>:</span></div><div class="line">   <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>,len(alist)):</div><div class="line">       num = <span class="number">0</span></div><div class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(alist)-j):       </div><div class="line">           <span class="keyword">if</span> alist[i+<span class="number">1</span>]&lt;alist[i]:</div><div class="line">               print(<span class="string">'111'</span>)</div><div class="line">               temp = alist[i]</div><div class="line">               alist[i] = alist[i+<span class="number">1</span>]</div><div class="line">               alist[i+<span class="number">1</span>] = temp</div><div class="line">               num += <span class="number">1</span></div><div class="line">       <span class="keyword">if</span> <span class="number">0</span>== num:  <span class="comment">#z这样不用比较会进行的更快</span></div><div class="line">           <span class="keyword">return</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">	le = [<span class="number">54</span>,<span class="number">26</span>,<span class="number">93</span>,<span class="number">17</span>,<span class="number">77</span>,<span class="number">31</span>,<span class="number">44</span>,<span class="number">55</span>,<span class="number">20</span>]</div><div class="line">	print(le)</div><div class="line">    bubble(le)</div><div class="line">    print(le)</div></pre></td></tr></table></figure>
+<h2 id="python中的一些算法"><a href="#python中的一些算法" class="headerlink" title="python中的一些算法"></a>python中的一些算法</h2><pre><code>对于一个程序员而言，一个好的算法可以让自己的程序变得既美观又稳定
+</code></pre><p>*下来来说下自己对python中的语言算法，不喜勿喷！</p>
+<p>冒泡排序</p>
+<p>为什么要写上num 的累加值  其实是对算法的一种优化<br>假如列表中有排好的顺序就不进入循环中 来节省时间</p>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubble</span><span class="params">(alist)</span>:</span></div><div class="line">   <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>,len(alist)):</div><div class="line">       num = <span class="number">0</span></div><div class="line">       <span class="keyword">for</span> i <span class="keyword">in</span> range(len(alist)-j):               </div><div class="line">           <span class="keyword">if</span> alist[i+<span class="number">1</span>]&lt;alist[i]:                  </div><div class="line">               temp = alist[i]</div><div class="line">               alist[i] = alist[i+<span class="number">1</span>]</div><div class="line">               alist[i+<span class="number">1</span>] = temp</div><div class="line">               num += <span class="number">1</span></div><div class="line">       <span class="keyword">if</span> <span class="number">0</span>== num:  <span class="comment">#z这样不用比较会进行的更快</span></div><div class="line">           <span class="keyword">return</span></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">  le = [<span class="number">54</span>,<span class="number">26</span>,<span class="number">93</span>,<span class="number">17</span>,<span class="number">77</span>,<span class="number">31</span>,<span class="number">44</span>,<span class="number">55</span>,<span class="number">20</span>]</div><div class="line">  print(le)</div><div class="line">    bubble(le)</div><div class="line">    print(le)</div></pre></td></tr></table></figure>
+<p>#选择排序<br>‘’’<br>思路<br>le = [54,26,93,17,77,31,44,55,20]<br>min = 3<br>alist[0],alist[3] = alist[3],alist[0]</p>
+<p>min = 8<br>alist[1],alist[8] = alist[8],alist[1]</p>
+<p>‘’’</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">select_socket</span><span class="params">(alist)</span>:</span></div><div class="line">  n = len(alist)</div><div class="line">  <span class="keyword">for</span> j <span class="keyword">in</span> range(n<span class="number">-1</span>):</div><div class="line">      min_index = j</div><div class="line">      num = <span class="number">0</span></div><div class="line">      <span class="keyword">for</span> i <span class="keyword">in</span> range(j+<span class="number">1</span>,n):</div><div class="line">          <span class="keyword">if</span> alist[min_index] &lt; alist[i]:</div><div class="line">              min_index = i</div><div class="line">      alist[j],alist[min_index] = alist[min_index],alist[j]</div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">  li = [<span class="number">54</span>,<span class="number">26</span>,<span class="number">93</span>,<span class="number">17</span>,<span class="number">77</span>,<span class="number">31</span>,<span class="number">44</span>,<span class="number">55</span>,<span class="number">20</span>]</div><div class="line">  select_socket(li)</div><div class="line">  print(li)</div></pre></td></tr></table></figure>
 
       
 
@@ -262,7 +272,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2017/04/01/html/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/03/26/进程/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
